@@ -16,7 +16,7 @@ class CallForParticipationsController < ApplicationController
     @call_for_participation.conference = @conference
 
     if @call_for_participation.save
-      redirect_to call_for_participation_path, notice: 'Launched Call for Participation.'
+      redirect_to call_for_participation_path, notice: 'Launched Call for Papers.'
     else
       render action: 'new'
     end

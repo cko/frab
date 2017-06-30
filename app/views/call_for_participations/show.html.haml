@@ -3,7 +3,7 @@
     .pull-right
       - if can? :manage, CallForParticipation
         = action_button "primary", "Edit", edit_call_for_participation_path, hint: "Edit this call for paper's data."
-    %h1 Call for Participation
+    %h1 Call for Papers
   - if @conference.call_for_participation.welcome_text
     .row
       .span16
